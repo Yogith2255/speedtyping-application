@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.background {
+    background-color: #dac0ff;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.box {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #9aa5b1;
+    font-size: 16px;
+}
+
+#quoteDisplay {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#quoteInput {
+    width: 100%;
+    resize: none;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 32px !important;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #timer {
+        font-size: 36px !important;
+        margin-left: 0 !important;
+    }
+
+    .box {
+        width: 95%;
+    }
+
+    #quoteDisplay {
+        font-size: 16px;
+    }
+
+    #quoteInput {
+        height: 160px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+    .box {
+        width: 80%;
+    }
+
+    #quoteInput {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 42px !important;
+    }
+}
+
+@media (min-width: 993px) {
+
+    .box {
+        width: 60%;
+    }
+
+    #quoteInput {
+        height: 220px;
+    }
+}
